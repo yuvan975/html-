@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login pages</title>
+</head>
+<body>
+    <center>
+ <h2>Create Account</h2>  
+ </center>
+ <form action="">
+ <label for="">first name</label><br><br>
+ <input type="text" name="Name" id="spass" placeholder="Enter the first name">&emsp;
+ <label for="">Last name</label>
+ <input type="text" name="Name" id="spass" placeholder="Enter the Last name"><br><br>
+
+ <label for="">Email</label><br><br>
+ <input type="text" name="Name" id="spass" placeholder="Enter your email"><br><br>
+
+ <label for="">Password</label><br><br>
+ <input type="text" name="Name" id="spass" placeholder="Enter your password">
+<center>
+ <label for=""> Confirm Password</label><br><br>
+ <input type="text" name="Name" id="spass" placeholder="Enter your password again">
+ </center>
+ 
+ <label for="">Gender</label><br>
+ <label for="">Male</label>
+  <input type="radio"  name="Gender" id="g1" value="male">
+
+  <label for="">Female</label>
+  <input type="radio"  name="Gender" id="g1" value="male"><br><br>
+<center>
+  <label for="">Hobbies</label><br>
+
+  <label for="">music</label>
+
+  <input type="checkbox"  name="Music" id="spass" value="music">
+
+  <label for="">Sports</label>
+  <input type="checkbox"  name="Sports" id="" value="Sports">
+   b<label for="">Travel</label>
+  <input type="checkbox"  name="Travel" id="spass" value="Travel">
+
+  <label for="">dance</label>
+  <input type="checkbox"  name="Gender" id="" value="dance">
+  </center>
+
+   <label for="">Upload Profile picture</label>
+    <form action="/upload" method="post">
+        <label for="file"></label><br><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <button type="Submit">Upload</button><br><br><br>
+        <center>
+
+        <label for="income-source">Source of Income</label>
+  <select id="income-source">
+    <option>Employed</option>
+    <option>Self-employed</option>
+    <option>Business</option>
+    <option>Student</option>
+    <option>Other</option>
+  </select>
+</center>
+  <br><br>
+
+  <label for="income">Income</label>
+  <input type="range" id="income" name="income" min="0" max="100000" step="1000" value="20000" oninput="updateIncomeValue()">
+  <span id="income-value">20K</span>
+
+  <script>
+    function updateIncomeValue() {
+      var income = document.getElementById("income").value;
+      document.getElementById("income-value").textContent = Math.round(income / 1000) + "K";
+    }
+  </script>
+<center>
+  <label for="">age</label><br>
+  <input type="text" name="Name" id="spass" placeholder="18">
+
+  </center>
+<label for="bio">Bio</label><br>
+  <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+ </form> 
+</body>
+</html>
